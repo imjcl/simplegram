@@ -1,0 +1,49 @@
+.simplegram {
+    text-align: center;
+    padding: 4px;
+}
+
+.simplegram div[class*="col-sm-"] {
+  padding: 0;
+  position: relative;
+}
+
+.simplegram .mask {
+  min-width: 133px;
+  position: absolute;
+  min-height: 133px;
+  top: 0;
+  left: 0;
+  margin: 0 5px;
+}
+
+.simplegram .mask {
+  opacity: 0;
+  background: rgba(52,102,204,0.7);
+  transition: all 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+.simplegram div:hover > .mask{
+  opacity: 1;
+}
+
+.simplegram img {
+    /*padding: 8px 10px;*/
+    max-width: 100%;
+    height: auto;
+    margin: 0 5px;
+}
+
+.simplegram .row > div {
+  float: left;
+}
+
+.simplegram .row:first-child {
+  margin-bottom: 0;
+}
+
+.simplegram .row:last-child {
+  margin-top: 0;
+}
+
